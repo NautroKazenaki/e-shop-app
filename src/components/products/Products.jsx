@@ -5,13 +5,9 @@ import Product from './Product/Product'
 
 import useStyles from './styles'
 
-const products = [
-    { id: 1, name: 'Keyboard', description: 'a gaming keyboard ', price: '10$', image: 'https://kotofoto.ru/product_img/2659/412061/412061_klaviatura_razer_cynosa_lite_rz03_02741500_r3r1m.jpg?v=1611309795' },
-    { id: 2, name: 'Mouse', description: 'a gaming mouse ', price: '8$', image: 'https://shop-device.ru/upload/iblock/6e6/01idw65zy607k05rb9t76frucjqtosza/rz01.jpg' }
-]
-
-const Products = () => {
+const Products = ({products}) => {
     const classes = useStyles()
+    
     return (
         <main className={classes.content}>
             <div className={classes.toolbar} />
